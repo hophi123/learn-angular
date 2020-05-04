@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { WordComponent } from './word/word.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { from } from 'rxjs';
+import { StructComponent } from './struct/struct.component';
+import { WordsComponent } from './words/words.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WordComponent,
-    UserFormComponent
+    UserFormComponent,
+    StructComponent,
+    WordsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

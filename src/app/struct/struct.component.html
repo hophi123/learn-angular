@@ -1,0 +1,13 @@
+<p *ngIf = "isShow">
+  struct works!
+</p>
+<ul>
+  <li *ngFor="let subject of arrSubjects">
+    <h3>
+      <a href="#" [title]="subject + ' detail'">
+        {{ 'Subject: ' + subject }}
+      </a>
+    </h3>
+  </li>
+</ul>
+<button (click)="isShow = !isShow">Toggle</button>
