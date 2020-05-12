@@ -9,6 +9,10 @@ import { from } from 'rxjs';
 import { StructComponent } from './struct/struct.component';
 import { WordsComponent } from './words/words.component';
 import { LoginComponent } from './login/login.component';
+import { PersonComponent } from './person/person.component';
+import { ListPersonComponent } from './list-person/list-person.component';
+import { ParentComponent } from './parent.component';
+import { ChildComponent } from './child.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { LoginComponent } from './login/login.component';
     UserFormComponent,
     StructComponent,
     WordsComponent,
-    LoginComponent
+    LoginComponent,
+    PersonComponent,
+    ListPersonComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
