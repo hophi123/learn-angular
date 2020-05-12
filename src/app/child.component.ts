@@ -1,22 +1,12 @@
-import { Component, Output, EventEmitter } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-child',
   template: `
-    <button (click)="addForParent();">Add</button>
-    <button (click)="subForParent();">Sub</button>
+    <h3>{{ value }}</h3>
   `
 })
 
 export class ChildComponent{
-    @Output() myclick = new EventEmitter<boolean>();
-
-    addForParent() {
-      this.myclick.emit(true);
-    }
-
-    subForParent(){
-      this.myclick.emit(false);
-    }
-
+  value = 0;
 }
